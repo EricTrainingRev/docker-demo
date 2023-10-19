@@ -29,3 +29,31 @@ docker --version
 ```
 
 That's it! You should now have Docker installed on your AWS EC2 instance.
+
+# AWS CLI install EC2 Instance
+Your instance should start wth the CLI installed
+
+# AWS Sam installation
+1. First get the zip with the install data
+```cli
+wget https://github.com/aws/aws-sam-cli/releases/latest/download/aws-sam-cli-linux-x86_64.zip
+```
+2. use the unzip command to unpackage the data
+```cli
+unzip {zip directory} {optional location to unpack data}
+```
+3. execute the install command
+```
+sudo ./{path to install command}/install
+```
+4. verify SAM is usable
+```cli
+sam --version
+```
+
+# Git install
+1. use yum to install git
+```cli
+sudo yum install git
+```
+2. profit
